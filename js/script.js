@@ -14,7 +14,7 @@ const kmDaPercorrere = parseFloat(prompt("Inserisci il numero di chilometri che 
 const etaPasseggero = parseInt(prompt("Inserisci l'età del passeggero:"));  
 
 // selezione dell input user
-const inputNome = document.querySelector(".nomeuser")
+const inputNome = document.querySelector(".nomeuser");
 
 // Calcola il prezzo del biglietto
 let prezzoAlKm = 0.21;
@@ -28,6 +28,9 @@ if (etaPasseggero < 18) {
     // Sconto del 40% per gli over 65
     prezzoTotale -= prezzoTotale * 0.4;
 }
+// selezione bottone did invio
+
+const sendButton = document.getElementById("send");
 
 // Formatto il prezzo finale con massimo due decimali
 prezzoTotale = prezzoTotale.toFixed(2);
