@@ -11,7 +11,10 @@ La risposta finale (o output) sarà anch’essa da scrivere in console.*/
 
 // Chiedi all'utente il numero di chilometri e l'età del passeggero
 const kmDaPercorrere = parseFloat(prompt("Inserisci il numero di chilometri che vuoi percorrere:"));
-const etaPasseggero = parseInt(prompt("Inserisci l'età del passeggero:"));
+const etaPasseggero = parseInt(prompt("Inserisci l'età del passeggero:"));  
+
+// selezione dell input user
+const inputNome = document.querySelector(".nomeuser")
 
 // Calcola il prezzo del biglietto
 let prezzoAlKm = 0.21;
@@ -30,4 +33,5 @@ if (etaPasseggero < 18) {
 prezzoTotale = prezzoTotale.toFixed(2);
 
 // Stampare il prezzo finale
-console.log("Il prezzo totale del viaggio è: €" + prezzoTotale);
+document.getElementById("test").innerHTML = ("il prezzo totale del viaggio è:" + prezzoTotale);
+
